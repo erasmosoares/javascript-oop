@@ -14,6 +14,12 @@ function createCircle(radius){
 }
 
 const circle = createCircle(1);
+circle.location = {x:1}; //Adding properties
+circle['location'] = {x:1};
+
+delete circle.location;
+delete circle['location'];
+
 circle.draw();
 
 //construction function
