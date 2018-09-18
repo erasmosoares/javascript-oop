@@ -35,4 +35,12 @@ Circle.apply({},[1,2,,3]);
 
 const another = new Circle(1);
 
+for (let key in circle){
+    if(typeof circle[key] !== 'function')
+    console.log(key, circle[key]);    
+}
+
+if('radius' in circle)
+console.log('Circle has a radius');
+
 //----------------------------//
