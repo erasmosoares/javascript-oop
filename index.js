@@ -33,6 +33,9 @@ function Circle(radius){
 Circle.call({},1);
 Circle.apply({},[1,2,,3]);
 
+Object.getPrototypeOf(Circle);
+// Circle.__proto__ (parent of Circle)
+
 const another = new Circle(1);
 
 for (let key in circle){
